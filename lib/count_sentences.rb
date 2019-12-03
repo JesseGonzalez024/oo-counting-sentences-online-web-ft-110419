@@ -18,7 +18,6 @@ class String
       false
     end
   end
-
   def exclamation?
     if self.end_with?("!")
       true 
@@ -26,10 +25,7 @@ class String
       false
     end
   end
-
   def count_sentences
     self.scan(/[^\.!?]+[\.!?]/).map(&:strip).count 
-      
-      
   end
 end
